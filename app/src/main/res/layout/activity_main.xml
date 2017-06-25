@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+       <!--Main Content-->
+       <LinearLayout
+           android:id="@+id/fragment_container_layout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:fitsSystemWindows="true">
+
+           <fragment
+               android:name="com.bobchouwb.ui.fragment.TimelineFragment"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"/>
+
+       </LinearLayout>
+
+        <!--DrawerLayout Content-->
+        <!--全屏参数设置 fitsSystemWindows background 妈的必须给个背景色不然无法全屏，坑爹~~~~ -->
+       <LinearLayout
+           android:layout_width="300dp"
+           android:layout_height="match_parent"
+           android:layout_gravity="left"
+           android:choiceMode="singleChoice"
+           android:fitsSystemWindows="true"
+           android:background="@color/themeColor">
+
+           <fragment
+               android:id="@+id/left_menu"
+               android:name="com.bobchouwb.ui.fragment.MenuFragment"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"/>
+
+       </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
