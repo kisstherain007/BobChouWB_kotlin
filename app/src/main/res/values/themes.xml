@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- Customize your theme here. -->
+        <item name="theme_color">@color/themeColor</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:selectableItemBackground">@drawable/selector_list_holo</item>-->
+        <item name="colorPrimary">?attr/theme_color</item>
+        <!-- Status bar color-->
+        <item name="colorPrimaryDark">?attr/theme_color</item>
+        <item name="colorAccent">?attr/theme_color</item>
+    </style>
+
+</resources>

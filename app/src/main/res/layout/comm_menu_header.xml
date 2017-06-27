@@ -17,7 +17,7 @@
         <android.support.constraint.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="135dp"
             android:background="@color/themeColor"
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -25,25 +25,25 @@
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:src="@{user.avatar_large}"/>
+                android:circleSrc="@{user.avatar_large}"/>
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="108dp"
-                android:layout_height="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="30dp"
                 android:text="@{user.name}"
                 android:textColor="@android:color/background_light"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView3"
-                />
+                android:textSize="@dimen/app_text_size_medium"/>
 
         </android.support.constraint.ConstraintLayout>
 
